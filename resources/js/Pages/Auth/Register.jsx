@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
-import InputError from '@/Components/atoms/InputError';
-import InputLabel from '@/Components/atoms/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/atoms/TextInput';
-import { Head, Link, useForm } from '@inertiajs/react';
-import Authentication from '@/Layouts/AuthenticationLayout';
+import InputError from "@/Components/Breeze/Input/InputError";
+import InputLabel from "@/Components/Breeze/Input/InputLabel";
+import TextInput from "@/Components/Breeze/Input/TextInput";
+import PrimaryButton from "@/Components/Breeze/PrimaryButton";
+import Authentication from "@/Components/Layouts/AuthenticationLayout";
+import { Head, Link, useForm } from "@inertiajs/react";
+import { useEffect } from "react";
+
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({

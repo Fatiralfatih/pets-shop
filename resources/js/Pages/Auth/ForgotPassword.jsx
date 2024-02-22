@@ -1,8 +1,8 @@
 import InputError from '@/Components/atoms/InputError';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/atoms/TextInput';
+import PrimaryButton from '@/Components/Breeze/PrimaryButton';
+import TextInput from '@/Components/Breeze/Input/TextInput';
 import { Head, useForm } from '@inertiajs/react';
-import Authentication from '@/Layouts/AuthenticationLayout';
+import Authentication from '@/Components/Layouts/AuthenticationLayout';
 
 export default function ForgotPassword({ status }) {
     const { data, setData, post, processing, errors } = useForm({

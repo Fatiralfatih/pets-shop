@@ -1,4 +1,6 @@
 {
+    "author": "Fatir Al Fatih",
+    "description": "Website Pet Shop",
     "private": true,
     "type": "module",
     "scripts": {

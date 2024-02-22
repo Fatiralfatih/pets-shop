@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import InputError from '@/Components/atoms/InputError';
-import InputLabel from '@/Components/atoms/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/atoms/TextInput';
+import InputLabel from '@/Components/Breeze/Input/InputLabel';
+import PrimaryButton from '@/Components/Breeze/PrimaryButton';
+import TextInput from '@/Components/Breeze/Input/TextInput';
 import { Head, useForm } from '@inertiajs/react';
-import Authentication from '@/Layouts/AuthenticationLayout';
+import Authentication from '@/Components/Layouts/AuthenticationLayout';
 
 export default function ResetPassword({ token, email }) {
     const { data, setData, post, processing, errors, reset } = useForm({

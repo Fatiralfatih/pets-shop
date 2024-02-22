@@ -1,6 +1,6 @@
-import PrimaryButton from '@/Components/PrimaryButton';
+import PrimaryButton from '@/Components/Breeze/PrimaryButton';
 import { Head, Link, useForm } from '@inertiajs/react';
-import Authentication from '@/Layouts/AuthenticationLayout';
+import Authentication from '@/Components/Layouts/AuthenticationLayout';
 
 export default function VerifyEmail({ status }) {
     const { post, processing } = useForm({});

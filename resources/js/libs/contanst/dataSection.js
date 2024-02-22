@@ -1,19 +1,23 @@
 const dataSection = [
     {
         id: 1,
-        nama: 'Home'
+        nama: 'Home',
+        link: '/',
     },
     {
         id: 2,
         nama: 'Category',
+        link: '#'
     },
     {
         id: 3,
         nama: 'About',
+        link: '#'
     },
     {
         id: 4,
-        nama: 'Contact'
+        nama: 'Contact',
+        link: '#'
     }
 ]
 

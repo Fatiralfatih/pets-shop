@@ -1,0 +1,68 @@
+const dataCat = [
+    {
+        id: 1,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 2,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 3,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 4,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 5,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 6,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 7,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+    {
+        id: 8,
+        image: 'image/cat-1.png',
+        name: 'MO231 - Pomeranian White',
+        genre: 'Male',
+        age: '02 Months',
+        price: '6.900.000',
+    },
+]
+
+export default dataCat;
