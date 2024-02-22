@@ -7,7 +7,7 @@ import listSosmed from "@/libs/contanst/listSosmed"
 
 const Footer = () => {
     return (
-        <footer className="mt-10 pb-10 bg-moon-yellow-400 rounded-3xl">
+        <footer className="mt-10 pb-10  bg-moon-yellow-400 rounded-3xl">
             <div className="container pt-12">
                 <div className="flex flex-col gap-7">
                     <div className="flex flex-col gap-5 md:flex-row md:justify-between">

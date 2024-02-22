@@ -1,7 +1,10 @@
-const dataCat = [
+const dataPets = [
     {
         id: 1,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/banteng-1.png',
+            alt: 'mouse-1'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -9,7 +12,10 @@ const dataCat = [
     },
     {
         id: 2,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/cat-2.jpg',
+            alt: 'cat-2'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -17,7 +23,10 @@ const dataCat = [
     },
     {
         id: 3,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/cat-3.jpg',
+            alt: 'cat-3'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -25,7 +34,10 @@ const dataCat = [
     },
     {
         id: 4,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/mouse-2.jpg',
+            alt: 'mouse-2'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -33,7 +45,10 @@ const dataCat = [
     },
     {
         id: 5,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/lion-1.jpg',
+            alt: 'lion-1'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -41,7 +56,10 @@ const dataCat = [
     },
     {
         id: 6,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/sheep-1.jpg',
+            alt: 'sheep-1'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -49,7 +67,10 @@ const dataCat = [
     },
     {
         id: 7,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/banteng-1.png',
+            alt: 'banteng-1'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -57,7 +78,10 @@ const dataCat = [
     },
     {
         id: 8,
-        image: 'image/cat-1.png',
+        image: { 
+            src: 'image/cat-1.png',
+            alt: 'image-pets8'
+        },
         name: 'MO231 - Pomeranian White',
         genre: 'Male',
         age: '02 Months',
@@ -65,4 +89,4 @@ const dataCat = [
     },
 ]
 
-export default dataCat;
+export default dataPets;

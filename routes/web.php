@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [GuestController::class, 'index'])->name('guest.index');
+Route::get('/category', [GuestController::class, 'category'])->name('guest.category');
 
 require __DIR__ . '/auth.php';

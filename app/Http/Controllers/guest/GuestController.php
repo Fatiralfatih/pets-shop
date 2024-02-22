@@ -16,4 +16,9 @@ class GuestController extends Controller
             'cats' => $cats
         ]);
     }
+
+    function category()
+    {
+        return Inertia::render('Guest/CategoryPage');
+    }
 }

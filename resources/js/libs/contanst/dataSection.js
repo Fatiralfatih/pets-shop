@@ -7,11 +7,11 @@ const dataSection = [
     {
         id: 2,
         nama: 'Category',
-        link: '#'
+        link: '/category'
     },
     {
         id: 3,
-        nama: 'About',
+        nama: 'Posting',
         link: '#'
     },
     {

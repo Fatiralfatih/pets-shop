@@ -1,23 +1,23 @@
-const HeadingHero = ({ title1, title2, description, icon, }) => {
+const HeadingHero = ({ title1, title2, description, icon, textColor = "text-primary-900" }) => {
 
     return (
-        <article className="space-y-3">
+        <article className={`space-y-3 ${textColor}`}>
             <div>
                 {icon ? <h1
-                    className="flex items-center justify-center gap-4 md:justify-center text-4xl leading-9 font-extrabold capitalize  text-primary-900 md:text-5xl lg:text-6xl"
+                    className="flex items-center justify-center gap-4 md:justify-center text-4xl leading-9 font-extrabold capitalize   md:text-5xl lg:text-6xl"
                 >
                     {title1}
                     <span>{icon}</span>
                 </h1>
                     :
-                    <h1 className="text-4xl leading-9 font-extrabold capitalize text-primary-900 md:text-5xl lg:text-6xl"
+                    <h1 className="text-4xl leading-9 font-extrabold capitalize  md:text-5xl lg:text-6xl"
                     >
                         {title1}
                     </h1>}
             </div>
             <div className="">
                 <h3
-                    className="text-2xl text-primary-900 font-bold sm:text-3xl lg:text-4xl"
+                    className="text-2xl  font-semibold sm:text-3xl lg:text-4xl"
                 >
                     {title2}
                 </h3>

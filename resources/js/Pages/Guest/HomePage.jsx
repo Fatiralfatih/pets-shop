@@ -1,30 +1,52 @@
-import GuestLayout from "@/Components/Layouts/GuestLayout"
 import { Head } from "@inertiajs/react"
 import SectionCard from "@/Components/template/CardSection"
 import SectionBanner from "@/Components/template/BannerSection"
 import SectionHero from "@/Components/template/HeroSection"
 import Card from "@/Components/Elements/Card/Card"
 import dataPost from "@/libs/contanst/dataPost"
-import dataCat from "@/libs/contanst/dataCats"
+import datapets from "@/libs/contanst/dataPets"
 import ArticlePets from "@/Components/Elements/Article/ArticlePets"
 import ArticlePost from "@/Components/Elements/Article/ArticlePost"
+import Navbar from "@/Components/template/Navbar"
+import Footer from "@/Components/template/Footer"
+import HeadingHero from "@/Components/template/HeroSection/HeadingHero"
+import F7PawIcon from "@/Components/Elements/Icon/F7PawIcon"
+import FooterHero from "@/Components/template/HeroSection/FooterHero"
 
 const HomePage = () => {
     return (
         <>
             <Head title="Home" />
-            <GuestLayout>
+            {/**Navbar */}
+            <Navbar bgColor="bg-moon-yellow-400" />
+            {/**Navbar */}
+            <main className="pt-14">
                 {/**hero section */}
-                <SectionHero />
+                <SectionHero>
+                    <HeadingHero
+                        title1="One More Friend"
+                        textColor="text-primary-800"
+                        title2="Thousands more fun!"
+                        description="Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!"
+                    />
+                    <FooterHero
+                        borderColor="border-primary-800"
+                        textColor={{ btn1: 'text-primary-800', btn2: 'text-white' }}
+                        bgColor="bg-primary-800"
+                    />
+                </SectionHero>
                 {/**end hero section */}
 
                 {/**cats section */}
                 <SectionCard
                     portal="Whats New?"
                     title="Take a look at some of our pets"
+                    btnName="View More"
+                    className="pt-10 md:pt-14 pb-5 md:pb-10"
+                    container="container"
                 >
-                    <div className='mt-4 grid grid-cols-2 gap-3 md:mt-10 md:grid-cols-3 md:gap-4 lg:grid-cols-4'>
-                        {dataCat.map((pet) => (<Card
+                    <div className='mt-4  grid grid-cols-2 gap-3 md:mt-10 md:grid-cols-3 md:gap-4 lg:grid-cols-4 '>
+                        {datapets.map((pet) => (<Card
                             key={pet.id}
                             image={pet.image}
                         >
@@ -34,14 +56,31 @@ const HomePage = () => {
                 </SectionCard>
                 {/**end cats section */}
 
-                {/**banner section 2 */}
-                <SectionBanner color="bg-moon-yellow-400" />
+                {/**banner section */}
+                <SectionBanner bgColor="bg-moon-yellow-400" padding="pt-12 pb-2 md:pb-4">
+                    <HeadingHero
+                        title1="Adoption"
+                        textColor="text-primary-800"
+                        icon={<F7PawIcon />}
+                        title2="We need help. so do they."
+                        description="Adopt a pet and give it a home,
+                        it will be love you back unconditionally."
+                    />
+                    <FooterHero
+                        borderColor="border-primary-800"
+                        textColor={{ btn1: 'text-primary-800', btn2: 'text-white' }}
+                        bgColor="bg-primary-800"
+                    />
+                </SectionBanner>
 
-                {/**end banner section 2 */}
+                {/**end banner section */}
 
                 <SectionCard
                     portal="You already know ?"
                     title="Useful pet knowledge"
+                    btnName="View More"
+                    className="pt-10 md:pt-14"
+                    container="container"
                 >
                     <div className="mt-4 md:mt-10 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
                         {dataPost.map((post) => (<Card
@@ -53,7 +92,12 @@ const HomePage = () => {
                     </div>
 
                 </SectionCard>
-            </GuestLayout>
+
+                {/**Footer */}
+            </main>
+            <Footer />
+
+            {/** end Footer */}
         </>
     )
 }
