@@ -6,8 +6,8 @@ const dataSection = [
     },
     {
         id: 2,
-        nama: 'Category',
-        link: '/category'
+        nama: 'Pets',
+        link: '/pets'
     },
     {
         id: 3,

@@ -35,6 +35,7 @@ export default {
                     800: '#F1D092',
                     900: '#EEC77E',
                 },
+                'blue-sea': '#00A7E7',
             },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],

@@ -4,9 +4,9 @@ const LogoWeb = () => {
     return (
         <Link
             href="/"
-            className='text-primary-800 font-extrabold font-Poppins text-2xl md:text-3xl md:flex lg:text-3xl md:min-w-[150px]'
+            className='text-primary-800 font-extrabold font-Poppins text-2xl md:text-3xl md:flex lg:text-3xl md:min-w-[200px]'
         >
-            Cat Shop
+            Pets Shop
         </Link>
     )
 }

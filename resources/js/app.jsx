@@ -6,7 +6,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { StrictMode } from 'react';
 
 createInertiaApp({
-    title: (title) => title ? `${title} - Cat Shop` : 'Cat Shop',
+    title: (title) => title ? `${title} - Pets Shop` : 'Pets Shop',
     resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`, import.meta.glob('./Pages/**/*.jsx')),
     setup({ el, App, props }) {
         const root = createRoot(el);

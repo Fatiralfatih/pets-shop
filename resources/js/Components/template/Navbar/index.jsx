@@ -7,12 +7,12 @@ import MenuList from '@/Components/Elements/List/MenuList'
 import MenuItem from '@/Components/Elements/List/MenuItem'
 import LogoWeb from '@/Components/Elements/Logo/LogoWeb'
 import Button from '@/Components/Elements/Button/Button'
-import { Link, usePage } from '@inertiajs/react'
+import { Link } from '@inertiajs/react'
 import { FaRegRegistered } from 'react-icons/fa'
 import { FaRegUser } from "react-icons/fa6";
 import InputText from '@/Components/Elements/Input/InputText'
+
 const Navbar = ({ bgColor }) => {
-    const { url, component } = usePage()
     const [openSidebar, setOpenSidebar] = useState(false);
 
     const handleOpenSidebar = () => {
@@ -24,7 +24,7 @@ const Navbar = ({ bgColor }) => {
     }
     return (
         <>
-            <nav className={`py-4 sm:py-2 ${bgColor} fixed right-0 left-0 z-10`}>
+            <nav className={`py-4 sm:py-2 bg-moon-yellow-400 fixed right-0 left-0 z-10`}>
 
                 <div className='relative container flex justify-between items-center md:gap-3 '>
                     {/** hamburger menu mobile */}
@@ -35,11 +35,12 @@ const Navbar = ({ bgColor }) => {
 
                     <MenuList classNavbar={!openSidebar && 'hidden md:p-2 xl:ms-5 2xl:ms-4'}>
                         {dataSection.map((item) => (
-                            <Link key={item.id} href={item.link} className={url === item.link ? 'bg-primary-800 rounded-full text-white' : 'text-primary-800'}>
-                                <MenuItem>
-                                    {item.nama}
-                                </MenuItem>
-                            </Link>
+                            <MenuItem
+                                key={item.id}
+                                {...item}
+                            >
+                                {item.nama}
+                            </MenuItem>
                         ))}
                     </MenuList>
 
@@ -62,7 +63,7 @@ const Navbar = ({ bgColor }) => {
                                 <BsSearch size={17} className='absolute z-10 top-3.5 left-4 cursor-pointer' />
                             </span>
                         </div>
-                        <Link href={route('login')}>
+                        <Link href={route('login')} as='a' aria-label='login or register'>
                             <FaRegUser size={25} />
                         </Link>
                     </div>
@@ -94,18 +95,18 @@ const Navbar = ({ bgColor }) => {
                         </div>
 
                         <MenuList>{dataSection.map(item => (
-                            <Link href={item.link} key={item.id}>
-                                <MenuItem
-                                >
-                                    {item.nama}
-                                </MenuItem>
-                            </Link>
+                            <MenuItem
+                                key={item.id}
+                                {...item}
+                            >
+                                {item.nama}
+                            </MenuItem>
                         ))}
                         </MenuList>
                     </div>
                     <div className='absolute bottom-2 left-0 right-0 px-4'>
                         <div className='flex gap-4 justify-between'>
-                            <Link href={route('login')}>
+                            <Link href={route('login')} aria-label='login/register'>
                                 <Button
                                     name="login"
                                     bgColor="bg-primary-800"

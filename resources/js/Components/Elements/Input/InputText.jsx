@@ -1,5 +1,5 @@
 
-const InputText = ({ id, type, placeholder = '', className, name, value }) => {
+const InputText = ({ id, type, placeholder = '', className, name, value, onClick }) => {
     return (
         <>
             <input
@@ -9,6 +9,7 @@ const InputText = ({ id, type, placeholder = '', className, name, value }) => {
                 value={value}
                 name={name}
                 className={`rounded-lg text-sm capitalize ${className}`}
+                onClick={onClick}
             />
         </>
     )

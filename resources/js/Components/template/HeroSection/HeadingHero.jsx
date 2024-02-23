@@ -16,11 +16,11 @@ const HeadingHero = ({ title1, title2, description, icon, textColor = "text-prim
                     </h1>}
             </div>
             <div className="">
-                <h3
+                <h2
                     className="text-2xl  font-semibold sm:text-3xl lg:text-4xl"
                 >
                     {title2}
-                </h3>
+                </h2>
             </div>
             <div className={`flex md:justify-center`}>
                 <p

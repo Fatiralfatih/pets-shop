@@ -2,7 +2,7 @@ import { Link } from "@inertiajs/react";
 import Button from "../Button/Button";
 import { MdNavigateNext } from "react-icons/md";
 
-const HeadingContent = ({ portal, title, btnName, filterOption }) => {
+const HeadingContent = ({ portal, title, btnName, filterOption, url }) => {
     return (
         <header className='flex justify-between'>
             <div className="md:space-y-1 md:flex md:flex-col">
@@ -11,7 +11,7 @@ const HeadingContent = ({ portal, title, btnName, filterOption }) => {
             </div>
             <div className="mt-5">
                 {btnName && (
-                    <Link href={route('guest.category')}>
+                    <Link href={url}>
                         <Button
                             name={btnName}
                             iconRight={<MdNavigateNext size={25} />}

@@ -23,11 +23,9 @@ const Footer = () => {
 
                         <UnorderedList gap="gap-x-10">
                             {listSosmed.map(item => (
-                                <a href={item.url} target="blank" key={item.id}>
-                                    <ListItem >
-                                        {item.logo}
-                                    </ListItem>
-                                </a>
+                                <ListItem key={item.id}>
+                                    {item.logo}
+                                </ListItem>
                             ))}
                         </UnorderedList>
                     </div>
@@ -47,7 +45,7 @@ const Footer = () => {
                             </UnorderedList>
                         </div>
                         <div className="lg:order-1">
-                            <p className="text-primary-800 font-light capitalize">© 2022 Monito. All rights reserved.</p>
+                            <p className="text-primary-800 font-light capitalize">© 2024 Pet Shop. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
