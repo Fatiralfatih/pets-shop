@@ -12,7 +12,7 @@ import { FaRegRegistered } from 'react-icons/fa'
 import { FaRegUser } from "react-icons/fa6";
 import InputText from '@/Components/Elements/Input/InputText'
 
-const Navbar = ({ bgColor }) => {
+const Navbar = () => {
     const [openSidebar, setOpenSidebar] = useState(false);
 
     const handleOpenSidebar = () => {
@@ -63,7 +63,7 @@ const Navbar = ({ bgColor }) => {
                                 <BsSearch size={17} className='absolute z-10 top-3.5 left-4 cursor-pointer' />
                             </span>
                         </div>
-                        <Link href={route('login')} as='a' aria-label='login or register'>
+                        <Link href={route('login')}>
                             <FaRegUser size={25} />
                         </Link>
                     </div>
